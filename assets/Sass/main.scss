@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+*{
+    background-color: #0C0C0C;
+    color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    h2{
+        margin-bottom: 2rem;
+    }
+.navbar{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 4rem;
+    margin-right: 2% ;
+
+    nav{
+        display: flex;
+        gap: 2rem;
+        
+    }
+}
+.container{
+    display: block;
+    height: 100%;
+    width: auto;
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 9rem;
+    .header-left{   
+        display: grid;
+        width: 60%;
+        /* margin-left: 5rem; */
+        align-items: center;
+        justify-items: start;
+        justify-content: space-around;
+        
+        .subtitulo{
+        font-style: normal;
+        font-size: 18px;
+        line-height: 23.44px;
+        color: #828282;
+        }
+        .btn-green-download{
+            background-color: #00DF5E;
+            width: 175px;
+            height: 50px;
+            border: none;
+            font-size: 14px;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 18px;
+            margin-right: 15px;
+            align-items: center;
+            justify-content: center;
+        }
+        .btn-transparente-fone{
+            background-color: transparent;
+            width: 175px;
+            height: 50px;
+            border: solid 1px rgba(51, 51, 51, 1);
+            color: white;
+            font-size: 14px;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 18px;
+            align-items: center;
+            justify-content: center;
+        }
+               
+    }
+    .header-right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 45%;
+        padding: 5%;
+        margin-left: 5rem;
+    }
+}
+main{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    min-height: 45vh;
+    
+    .main-apresentacao{
+        
+        display: grid;
+        justify-items: center;
+        
+    }
+        .text-apresetacao{
+            width: 50%;
+            text-align: center;
+            color: #828282;
+        }
+    .midias-socias{
+        height: 20rem;
+        display: flex;
+        list-style: none;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 2%;
+        min-width: 80%;
+        width: auto;
+        flex-wrap: wrap;
+        gap: 2rem;
+
+        h5, p{
+        margin-block-start: 5px;
+        margin-block-end: 0;
+        color: #828282;
+    }   
+      li{
+       
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+        
+      }
+    
+    }
+    .projetos{
+        display: flex;
+        width: 75%;
+        justify-content:space-around;
+        flex-wrap: wrap;
+        margin-bottom: 5rem;
+        gap: 2rem;
+        .grid-item{
+        background-color: #333333;
+        width: 280px;
+        height: 250px;
+        display: grid;
+        align-items: flex-start;
+        justify-items: center;
+        padding-top: 5%;
+        overflow: hidden;
+        text-align: left;
+        
+        p { 
+        display: block;
+        margin-block-start: 0;
+        background-color: #333333;
+        }
+        }
+        .card-img{
+            overflow: hidden;
+            width: 80%;
+            
+           
+            img{
+                
+            width: 100%;
+            height: 100%;
+            -webkit-transition: -webkit-transform .5s ease;
+            transition: transform .5s ease; 
+            object-fit:cover;
+            background-color: #333333;
+          
+            }
+            img:hover {
+                -webkit-transform: scale(1.1);
+                transform: scale(1.1);
+             }
+        }
+    }
+    // .servicos{
+        
+    //     width: 90%;
+    //     display: flex;
+    //     padding: 5%;
+    //     justify-content: space-evenly;
+        
+    //     .card-servicos{
+    //     background: #212121;
+    //     border: 1px solid #333333;
+    //     padding: 3%;
+    //     width: 200px;
+    //     height: 160px;
+    //     border-bottom: solid .4rem #00DF5E;
+        
+            
+    //         p{  
+    //             font-weight: 500;
+    //             font-size: 23px;
+    //             line-height: 42px;
+    //             color: #828282;
+    //         }
+    //     }
+    // }
+    .area-skills{
+        min-width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        
+
+        .card-Skills{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 130px;
+        width: 130px;
+        border-radius: 0px;
+        background: #212121;
+        border: 1px solid #333333;
+        
+        img{
+            background-color: #212121;;
+        }
+        }
+    }
+}
+    footer{
+        margin-top:3rem;
+        width: 100%;
+        background-color: #333333;
+        height:60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        
+        
+    } 
+}
+@media screen and (max-width: 425px) {
+    .navbar{
+        font-size: small;
+    }
+    header {
+    flex-wrap: wrap;
+    margin-bottom: 2rem !important;
+        .header-left{
+            padding: none !important;
+            margin-left: 1rem !important;
+            width: auto !important;
+           
+        }
+        .header-right{
+            display:none !important;
+            
+        }
+        button{
+            align-items: center;
+            justify-content: center;
+            margin-top: .2rem;
+        }
+        
+    }
+    main{
+        .midias-socias{
+            height: auto !important;
+        }
+        .text-apresetacao{
+            width: 80% !important;
+        }
+    }
+    .area-skills{
+        gap: 0.9rem !important;
+    }
+    }
+
+}

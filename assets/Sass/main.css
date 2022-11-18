@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+* {
+  background-color: #0C0C0C;
+  color: rgb(255, 255, 255);
+  font-family: "Poppins", sans-serif;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+* h2 {
+  margin-bottom: 2rem;
+}
+* .navbar {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  height: 4rem;
+  margin-right: 2%;
+}
+* .navbar nav {
+  display: flex;
+  gap: 2rem;
+}
+* .container {
+  display: block;
+  height: 100%;
+  width: auto;
+}
+* .container header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 9rem;
+}
+* .container header .header-left {
+  display: grid;
+  width: 60%;
+  /* margin-left: 5rem; */
+  align-items: center;
+  justify-items: start;
+  justify-content: space-around;
+}
+* .container header .header-left .subtitulo {
+  font-style: normal;
+  font-size: 18px;
+  line-height: 23.44px;
+  color: #828282;
+}
+* .container header .header-left .btn-green-download {
+  background-color: #00DF5E;
+  width: 175px;
+  height: 50px;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  margin-right: 15px;
+  align-items: center;
+  justify-content: center;
+}
+* .container header .header-left .btn-transparente-fone {
+  background-color: transparent;
+  width: 175px;
+  height: 50px;
+  border: solid 1px rgb(51, 51, 51);
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  align-items: center;
+  justify-content: center;
+}
+* .container header .header-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
+  padding: 5%;
+  margin-left: 5rem;
+}
+* .container main {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  min-height: 45vh;
+}
+* .container main .main-apresentacao {
+  display: grid;
+  justify-items: center;
+}
+* .container main .text-apresetacao {
+  width: 50%;
+  text-align: center;
+  color: #828282;
+}
+* .container main .midias-socias {
+  height: 20rem;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 2%;
+  min-width: 80%;
+  width: auto;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+* .container main .midias-socias h5, * .container main .midias-socias p {
+  -webkit-margin-before: 5px;
+          margin-block-start: 5px;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  color: #828282;
+}
+* .container main .midias-socias li {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+}
+* .container main .projetos {
+  display: flex;
+  width: 75%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 5rem;
+  gap: 2rem;
+}
+* .container main .projetos .grid-item {
+  background-color: #333333;
+  width: 280px;
+  height: 250px;
+  display: grid;
+  align-items: flex-start;
+  justify-items: center;
+  padding-top: 5%;
+  overflow: hidden;
+  text-align: left;
+}
+* .container main .projetos .grid-item p {
+  display: block;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  background-color: #333333;
+}
+* .container main .projetos .card-img {
+  overflow: hidden;
+  width: 80%;
+}
+* .container main .projetos .card-img img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-color: #333333;
+}
+* .container main .projetos .card-img img:hover {
+  transform: scale(1.1);
+}
+* .container main .area-skills {
+  min-width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+* .container main .area-skills .card-Skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 130px;
+  width: 130px;
+  border-radius: 0px;
+  background: #212121;
+  border: 1px solid #333333;
+}
+* .container main .area-skills .card-Skills img {
+  background-color: #212121;
+}
+* .container footer {
+  margin-top: 3rem;
+  width: 100%;
+  background-color: #333333;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+@media screen and (max-width: 425px) {
+  * .navbar {
+    font-size: small;
+  }
+  * header {
+    flex-wrap: wrap;
+    margin-bottom: 2rem !important;
+  }
+  * header .header-left {
+    padding: none !important;
+    margin-left: 1rem !important;
+    width: auto !important;
+  }
+  * header .header-right {
+    display: none !important;
+  }
+  * header button {
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.2rem;
+  }
+  * main .midias-socias {
+    height: auto !important;
+  }
+  * main .text-apresetacao {
+    width: 80% !important;
+  }
+  * .area-skills {
+    gap: 0.9rem !important;
+  }
+}/*# sourceMappingURL=main.css.map */
